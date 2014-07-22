@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4376EAEE-60C2-4D27-8D25-6DBAC1D03DCD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SHA256</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>474B4483-285D-430F-B5B4-1E2E3DF350EA</key>
+		<string>ssh://github.com/CryptoCoinSwift/SHA256-Swift.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SHA256/SHA256.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>474B4483-285D-430F-B5B4-1E2E3DF350EA</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/CryptoCoinSwift/SHA256-Swift.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>474B4483-285D-430F-B5B4-1E2E3DF350EA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>474B4483-285D-430F-B5B4-1E2E3DF350EA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SHA256-Swift</string>
+		</dict>
+	</array>
+</dict>
+</plist>
