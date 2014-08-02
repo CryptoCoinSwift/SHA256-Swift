@@ -4,14 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SHA256.xcscheme</key>
+		<key>SHA256 Mac.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SHA256 iOs.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>A2D39BE0198D841400E2D317</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A2D39BEA198D841400E2D317</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A2FD6A37197E8757006FA7EF</key>
 		<dict>
 			<key>primary</key>

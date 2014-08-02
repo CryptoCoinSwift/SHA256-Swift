@@ -10,10 +10,15 @@
 		A2230F78197E883B003C178C /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2230F77197E883B003C178C /* SHA256.swift */; };
 		A2230F7B197E8852003C178C /* SHA256Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2230F7A197E8852003C178C /* SHA256Tests.swift */; };
 		A2230F7F197E8914003C178C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2230F7E197E8914003C178C /* SystemConfiguration.framework */; };
+		A2D39BEC198D841500E2D317 /* SHA256.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D39BE1198D841400E2D317 /* SHA256.framework */; };
+		A2D88901198D86DD00D57AD2 /* SHA256Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2230F7A197E8852003C178C /* SHA256Tests.swift */; };
+		A2D88906198D881E00D57AD2 /* SHA256.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D88905198D881E00D57AD2 /* SHA256.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2D88907198D886000D57AD2 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2230F77197E883B003C178C /* SHA256.swift */; };
+		A2D8890F198D8AAF00D57AD2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D88908198D889100D57AD2 /* SystemConfiguration.framework */; };
 		A2FD6A3C197E8757006FA7EF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FD6A3B197E8757006FA7EF /* Cocoa.framework */; };
 		A2FD6A51197E8757006FA7EF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FD6A50197E8757006FA7EF /* XCTest.framework */; };
 		A2FD6A52197E8757006FA7EF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FD6A3B197E8757006FA7EF /* Cocoa.framework */; };
-		A2FD6A55197E8757006FA7EF /* SHA256.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FD6A38197E8757006FA7EF /* SHA256.framework */; };
+		A2FD6A55197E8757006FA7EF /* SHA256Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FD6A38197E8757006FA7EF /* SHA256Mac.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +36,13 @@
 			remoteGlobalIDString = A2FD6A37197E8757006FA7EF;
 			remoteInfo = SHA256;
 		};
+		A2D39BED198D841500E2D317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2FD6A2F197E8757006FA7EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2D39BE0198D841400E2D317;
+			remoteInfo = SHA256;
+		};
 		A2FD6A53197E8757006FA7EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A2FD6A2F197E8757006FA7EF /* Project object */;
@@ -45,18 +57,42 @@
 		A2230F7A197E8852003C178C /* SHA256Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256Tests.swift; sourceTree = SOURCE_ROOT; };
 		A2230F7C197E88F3003C178C /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
 		A2230F7E197E8914003C178C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		A2FD6A38197E8757006FA7EF /* SHA256.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHA256.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D39BE1198D841400E2D317 /* SHA256.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHA256.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D39BE4198D841400E2D317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "Supporting Files/iOs/Info.plist"; sourceTree = "<group>"; };
+		A2D39BEB198D841400E2D317 /* SHA256Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHA256Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D39BF1198D841500E2D317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/iOsTests/Info.plist"; sourceTree = SOURCE_ROOT; };
+		A2D88905198D881E00D57AD2 /* SHA256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHA256.h; path = SHA256/SHA256.h; sourceTree = SOURCE_ROOT; };
+		A2D88908198D889100D57AD2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		A2D8890A198D89E500D57AD2 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		A2D8890C198D8A4000D57AD2 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.0.sdk/usr/lib/system/libcommonCrypto.dylib; sourceTree = DEVELOPER_DIR; };
+		A2FD6A38197E8757006FA7EF /* SHA256Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHA256Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FD6A3B197E8757006FA7EF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A2FD6A3E197E8757006FA7EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A2FD6A3F197E8757006FA7EF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A2FD6A40197E8757006FA7EF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		A2FD6A43197E8757006FA7EF /* SHA256-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "SHA256-Info.plist"; path = "Supporting Files/SHA256-Info.plist"; sourceTree = "<group>"; };
-		A2FD6A4F197E8757006FA7EF /* SHA256Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHA256Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2FD6A43197E8757006FA7EF /* SHA256-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "SHA256-Info.plist"; path = "Supporting Files/Mac/SHA256-Info.plist"; sourceTree = "<group>"; };
+		A2FD6A4F197E8757006FA7EF /* SHA256MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHA256MacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FD6A50197E8757006FA7EF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A2FD6A58197E8757006FA7EF /* SHA256Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SHA256Tests-Info.plist"; path = "Supporting Files/SHA256Tests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A2FD6A58197E8757006FA7EF /* SHA256Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SHA256Tests-Info.plist"; path = "Supporting Files/Mac/SHA256Tests-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A2D39BDD198D841400E2D317 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D8890F198D8AAF00D57AD2 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D39BE8198D841400E2D317 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D39BEC198D841500E2D317 /* SHA256.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2FD6A34197E8757006FA7EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2FD6A55197E8757006FA7EF /* SHA256.framework in Frameworks */,
+				A2FD6A55197E8757006FA7EF /* SHA256Mac.framework in Frameworks */,
 				A2FD6A52197E8757006FA7EF /* Cocoa.framework in Frameworks */,
 				A2FD6A51197E8757006FA7EF /* XCTest.framework in Frameworks */,
 			);
@@ -87,12 +123,12 @@
 			name = Mac;
 			sourceTree = "<group>";
 		};
-		A2230F76197E87E9003C178C /* Tests */ = {
+		A2230F76197E87E9003C178C /* MacTests */ = {
 			isa = PBXGroup;
 			children = (
 				A2FD6A58197E8757006FA7EF /* SHA256Tests-Info.plist */,
 			);
-			name = Tests;
+			name = MacTests;
 			sourceTree = "<group>";
 		};
 		A2230F79197E8840003C178C /* Classes */ = {
@@ -101,6 +137,23 @@
 				A2230F77197E883B003C178C /* SHA256.swift */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		A2D39BFC198D84D700E2D317 /* iOs */ = {
+			isa = PBXGroup;
+			children = (
+				A2D88905198D881E00D57AD2 /* SHA256.h */,
+				A2D39BE4198D841400E2D317 /* Info.plist */,
+			);
+			name = iOs;
+			sourceTree = "<group>";
+		};
+		A2D39BFD198D84DD00E2D317 /* iOsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2D39BF1198D841500E2D317 /* Info.plist */,
+			);
+			name = iOsTests;
 			sourceTree = "<group>";
 		};
 		A2FD6A2E197E8757006FA7EF = {
@@ -117,8 +170,10 @@
 		A2FD6A39197E8757006FA7EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2FD6A38197E8757006FA7EF /* SHA256.framework */,
-				A2FD6A4F197E8757006FA7EF /* SHA256Tests.xctest */,
+				A2FD6A38197E8757006FA7EF /* SHA256Mac.framework */,
+				A2FD6A4F197E8757006FA7EF /* SHA256MacTests.xctest */,
+				A2D39BE1198D841400E2D317 /* SHA256.framework */,
+				A2D39BEB198D841400E2D317 /* SHA256Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +181,9 @@
 		A2FD6A3A197E8757006FA7EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2D8890C198D8A4000D57AD2 /* libcommonCrypto.dylib */,
+				A2D8890A198D89E500D57AD2 /* JavaScriptCore.framework */,
+				A2D88908198D889100D57AD2 /* SystemConfiguration.framework */,
 				A2230F7E197E8914003C178C /* SystemConfiguration.framework */,
 				A2230F7C197E88F3003C178C /* libcommonCrypto.dylib */,
 				A2FD6A3B197E8757006FA7EF /* Cocoa.framework */,
@@ -148,8 +206,10 @@
 		A2FD6A42197E8757006FA7EF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A2230F76197E87E9003C178C /* Tests */,
 				A2230F75197E87E2003C178C /* Mac */,
+				A2D39BFC198D84D700E2D317 /* iOs */,
+				A2230F76197E87E9003C178C /* MacTests */,
+				A2D39BFD198D84DD00E2D317 /* iOsTests */,
 			);
 			name = "Supporting Files";
 			path = SHA256;
@@ -167,6 +227,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		A2D39BDE198D841400E2D317 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D88906198D881E00D57AD2 /* SHA256.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2FD6A35197E8757006FA7EF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,6 +245,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		A2D39BE0198D841400E2D317 /* SHA256 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2D39BF4198D841500E2D317 /* Build configuration list for PBXNativeTarget "SHA256" */;
+			buildPhases = (
+				A2D39BDC198D841400E2D317 /* Sources */,
+				A2D39BDD198D841400E2D317 /* Frameworks */,
+				A2D39BDE198D841400E2D317 /* Headers */,
+				A2D39BDF198D841400E2D317 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SHA256;
+			productName = SHA256;
+			productReference = A2D39BE1198D841400E2D317 /* SHA256.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A2D39BEA198D841400E2D317 /* SHA256Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2D39BF8198D841500E2D317 /* Build configuration list for PBXNativeTarget "SHA256Tests" */;
+			buildPhases = (
+				A2D39BE7198D841400E2D317 /* Sources */,
+				A2D39BE8198D841400E2D317 /* Frameworks */,
+				A2D39BE9198D841400E2D317 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2D39BEE198D841500E2D317 /* PBXTargetDependency */,
+			);
+			name = SHA256Tests;
+			productName = SHA256Tests;
+			productReference = A2D39BEB198D841400E2D317 /* SHA256Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A2FD6A37197E8757006FA7EF /* SHA256Mac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2FD6A60197E8757006FA7EF /* Build configuration list for PBXNativeTarget "SHA256Mac" */;
@@ -192,7 +296,7 @@
 			);
 			name = SHA256Mac;
 			productName = SHA256;
-			productReference = A2FD6A38197E8757006FA7EF /* SHA256.framework */;
+			productReference = A2FD6A38197E8757006FA7EF /* SHA256Mac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A2FD6A4E197E8757006FA7EF /* SHA256MacTests */ = {
@@ -212,7 +316,7 @@
 			);
 			name = SHA256MacTests;
 			productName = SHA256Tests;
-			productReference = A2FD6A4F197E8757006FA7EF /* SHA256Tests.xctest */;
+			productReference = A2FD6A4F197E8757006FA7EF /* SHA256MacTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -224,6 +328,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Crypto Coin Swift";
 				TargetAttributes = {
+					A2D39BE0198D841400E2D317 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					A2D39BEA198D841400E2D317 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = A2D39BE0198D841400E2D317;
+					};
 					A2FD6A4E197E8757006FA7EF = {
 						TestTargetID = A2FD6A37197E8757006FA7EF;
 					};
@@ -243,11 +354,27 @@
 			targets = (
 				A2FD6A37197E8757006FA7EF /* SHA256Mac */,
 				A2FD6A4E197E8757006FA7EF /* SHA256MacTests */,
+				A2D39BE0198D841400E2D317 /* SHA256 */,
+				A2D39BEA198D841400E2D317 /* SHA256Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A2D39BDF198D841400E2D317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D39BE9198D841400E2D317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2FD6A36197E8757006FA7EF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +392,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A2D39BDC198D841400E2D317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D88907198D886000D57AD2 /* SHA256.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D39BE7198D841400E2D317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D88901198D86DD00D57AD2 /* SHA256Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2FD6A33197E8757006FA7EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,6 +436,11 @@
 			isa = PBXTargetDependency;
 			target = A2FD6A37197E8757006FA7EF /* SHA256Mac */;
 			targetProxy = A2230F82197E8924003C178C /* PBXContainerItemProxy */;
+		};
+		A2D39BEE198D841500E2D317 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2D39BE0198D841400E2D317 /* SHA256 */;
+			targetProxy = A2D39BED198D841500E2D317 /* PBXContainerItemProxy */;
 		};
 		A2FD6A54197E8757006FA7EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -345,7 +493,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHA256/SHA256-Prefix.pch";
-				INFOPLIST_FILE = "Supporting Files/SHA256-Info.plist";
+				INFOPLIST_FILE = "Supporting Files/Mac/SHA256-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -369,11 +517,177 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHA256/SHA256-Prefix.pch";
-				INFOPLIST_FILE = "Supporting files/SHA256Tests-Info.plist";
+				INFOPLIST_FILE = "Supporting files/Mac/SHA256Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = CommonCrypto;
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Fast;
+		};
+		A2D39BF5198D841500E2D317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sjors Provoost (TB5C4TJ39S)";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Supporting Files/iOs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A2D39BF6198D841500E2D317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Supporting Files/iOs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A2D39BF7198D841500E2D317 /* Fast */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sjors Provoost (TB5C4TJ39S)";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Supporting Files/iOs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Fast;
+		};
+		A2D39BF9198D841500E2D317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Supporting Files/iOsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2D39BFA198D841500E2D317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Supporting Files/iOsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2D39BFB198D841500E2D317 /* Fast */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Supporting Files/iOsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Fast;
 		};
@@ -458,7 +772,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHA256/SHA256-Prefix.pch";
-				INFOPLIST_FILE = "Supporting Files/SHA256-Info.plist";
+				INFOPLIST_FILE = "Supporting Files/Mac/SHA256-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -482,7 +796,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHA256/SHA256-Prefix.pch";
-				INFOPLIST_FILE = "Supporting Files/SHA256-Info.plist";
+				INFOPLIST_FILE = "Supporting Files/Mac/SHA256-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -509,7 +823,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Supporting files/SHA256Tests-Info.plist";
+				INFOPLIST_FILE = "Supporting files/Mac/SHA256Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = CommonCrypto;
@@ -529,7 +843,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHA256/SHA256-Prefix.pch";
-				INFOPLIST_FILE = "Supporting files/SHA256Tests-Info.plist";
+				INFOPLIST_FILE = "Supporting files/Mac/SHA256Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = CommonCrypto;
@@ -540,6 +854,26 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A2D39BF4198D841500E2D317 /* Build configuration list for PBXNativeTarget "SHA256" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D39BF5198D841500E2D317 /* Debug */,
+				A2D39BF6198D841500E2D317 /* Release */,
+				A2D39BF7198D841500E2D317 /* Fast */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2D39BF8198D841500E2D317 /* Build configuration list for PBXNativeTarget "SHA256Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D39BF9198D841500E2D317 /* Debug */,
+				A2D39BFA198D841500E2D317 /* Release */,
+				A2D39BFB198D841500E2D317 /* Fast */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A2FD6A32197E8757006FA7EF /* Build configuration list for PBXProject "SHA256" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
