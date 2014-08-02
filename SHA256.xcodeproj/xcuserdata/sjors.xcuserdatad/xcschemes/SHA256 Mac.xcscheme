@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A2FD6A37197E8757006FA7EF"
-               BuildableName = "SHA256Mac.framework"
+               BuildableName = "SHA256.framework"
                BlueprintName = "SHA256Mac"
                ReferencedContainer = "container:SHA256.xcodeproj">
             </BuildableReference>
@@ -54,7 +54,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A2FD6A37197E8757006FA7EF"
-            BuildableName = "SHA256Mac.framework"
+            BuildableName = "SHA256.framework"
             BlueprintName = "SHA256Mac"
             ReferencedContainer = "container:SHA256.xcodeproj">
          </BuildableReference>
