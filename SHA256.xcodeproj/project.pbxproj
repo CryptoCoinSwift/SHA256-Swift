@@ -177,9 +177,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A2FD6A37197E8757006FA7EF /* SHA256 */ = {
+		A2FD6A37197E8757006FA7EF /* SHA256Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2FD6A60197E8757006FA7EF /* Build configuration list for PBXNativeTarget "SHA256" */;
+			buildConfigurationList = A2FD6A60197E8757006FA7EF /* Build configuration list for PBXNativeTarget "SHA256Mac" */;
 			buildPhases = (
 				A2FD6A33197E8757006FA7EF /* Sources */,
 				A2FD6A34197E8757006FA7EF /* Frameworks */,
@@ -190,14 +190,14 @@
 			);
 			dependencies = (
 			);
-			name = SHA256;
+			name = SHA256Mac;
 			productName = SHA256;
 			productReference = A2FD6A38197E8757006FA7EF /* SHA256.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A2FD6A4E197E8757006FA7EF /* SHA256Tests */ = {
+		A2FD6A4E197E8757006FA7EF /* SHA256MacTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2FD6A63197E8757006FA7EF /* Build configuration list for PBXNativeTarget "SHA256Tests" */;
+			buildConfigurationList = A2FD6A63197E8757006FA7EF /* Build configuration list for PBXNativeTarget "SHA256MacTests" */;
 			buildPhases = (
 				A2FD6A4B197E8757006FA7EF /* Sources */,
 				A2FD6A4C197E8757006FA7EF /* Frameworks */,
@@ -210,7 +210,7 @@
 				A2230F81197E8924003C178C /* PBXTargetDependency */,
 				A2230F83197E8924003C178C /* PBXTargetDependency */,
 			);
-			name = SHA256Tests;
+			name = SHA256MacTests;
 			productName = SHA256Tests;
 			productReference = A2FD6A4F197E8757006FA7EF /* SHA256Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -241,8 +241,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A2FD6A37197E8757006FA7EF /* SHA256 */,
-				A2FD6A4E197E8757006FA7EF /* SHA256Tests */,
+				A2FD6A37197E8757006FA7EF /* SHA256Mac */,
+				A2FD6A4E197E8757006FA7EF /* SHA256MacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -286,17 +286,17 @@
 /* Begin PBXTargetDependency section */
 		A2230F81197E8924003C178C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A2FD6A37197E8757006FA7EF /* SHA256 */;
+			target = A2FD6A37197E8757006FA7EF /* SHA256Mac */;
 			targetProxy = A2230F80197E8924003C178C /* PBXContainerItemProxy */;
 		};
 		A2230F83197E8924003C178C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A2FD6A37197E8757006FA7EF /* SHA256 */;
+			target = A2FD6A37197E8757006FA7EF /* SHA256Mac */;
 			targetProxy = A2230F82197E8924003C178C /* PBXContainerItemProxy */;
 		};
 		A2FD6A54197E8757006FA7EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A2FD6A37197E8757006FA7EF /* SHA256 */;
+			target = A2FD6A37197E8757006FA7EF /* SHA256Mac */;
 			targetProxy = A2FD6A53197E8757006FA7EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -550,7 +550,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2FD6A60197E8757006FA7EF /* Build configuration list for PBXNativeTarget "SHA256" */ = {
+		A2FD6A60197E8757006FA7EF /* Build configuration list for PBXNativeTarget "SHA256Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2FD6A61197E8757006FA7EF /* Debug */,
@@ -560,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2FD6A63197E8757006FA7EF /* Build configuration list for PBXNativeTarget "SHA256Tests" */ = {
+		A2FD6A63197E8757006FA7EF /* Build configuration list for PBXNativeTarget "SHA256MacTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2FD6A64197E8757006FA7EF /* Debug */,
