@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A2D39BE0198D841400E2D317"
-               BuildableName = "SHA256.framework"
-               BlueprintName = "SHA256"
+               BuildableName = "SHA256iOs.framework"
+               BlueprintName = "SHA256iOs"
                ReferencedContainer = "container:SHA256.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A2D39BE0198D841400E2D317"
-            BuildableName = "SHA256.framework"
-            BlueprintName = "SHA256"
+            BuildableName = "SHA256iOs.framework"
+            BlueprintName = "SHA256iOs"
             ReferencedContainer = "container:SHA256.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A2D39BE0198D841400E2D317"
-            BuildableName = "SHA256.framework"
-            BlueprintName = "SHA256"
+            BuildableName = "SHA256iOs.framework"
+            BlueprintName = "SHA256iOs"
             ReferencedContainer = "container:SHA256.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,8 +80,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A2D39BE0198D841400E2D317"
-            BuildableName = "SHA256.framework"
-            BlueprintName = "SHA256"
+            BuildableName = "SHA256iOs.framework"
+            BlueprintName = "SHA256iOs"
             ReferencedContainer = "container:SHA256.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
