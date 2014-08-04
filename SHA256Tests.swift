@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import SHA256
+import SHA256Mac
 
 class SHA256Tests: XCTestCase {
 

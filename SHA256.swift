@@ -12,9 +12,10 @@ import CommonCrypto
 public struct SHA256 {
     public static func digest (input : NSData) -> NSData {
         let digestLength = HMACAlgorithm.SHA256.digestLength()
-        let hash = UnsafePointer<CUnsignedChar>.alloc(digestLength)
         
-        CC_SHA256(input.bytes, UInt32(input.length), hash)
+        var hash = [UInt8](count: digestLength, repeatedValue: 0)
+        
+        CC_SHA256(input.bytes, UInt32(input.length), &hash)
         
         return NSData(bytes: hash, length: digestLength)
     }
