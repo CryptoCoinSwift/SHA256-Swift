@@ -419,6 +419,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHA256/SHA256-Prefix.pch";
 				INFOPLIST_FILE = "Supporting Files/Mac/SHA256-Info.plist";
@@ -429,7 +430,7 @@
 				);
 				PRODUCT_NAME = SHA256Mac;
 				SWIFT_INCLUDE_PATHS = CommonCrypto;
-				SWIFT_OPTIMIZATION_LEVEL = "-Ofast";
+				SWIFT_OPTIMIZATION_LEVEL = "-Ounchecked";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Fast;
