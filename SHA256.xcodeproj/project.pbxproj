@@ -49,6 +49,7 @@
 		A2230F7E197E8914003C178C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A22C2B90198E656400B48868 /* SHA256iOs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHA256iOs.h; path = SHA256iOs/SHA256iOs.h; sourceTree = SOURCE_ROOT; };
 		A22C2B92198E658900B48868 /* SHA256Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256Tests.swift; sourceTree = SOURCE_ROOT; };
+		A23208D21996473200BF5E38 /* SHA256 doc.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "SHA256 doc.playground"; sourceTree = "<group>"; };
 		A2D39BE1198D841400E2D317 /* SHA256iOs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHA256iOs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D39BE4198D841400E2D317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "Supporting Files/iOs/Info.plist"; sourceTree = "<group>"; };
 		A2D88908198D889100D57AD2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
@@ -131,6 +132,7 @@
 		A2FD6A2E197E8757006FA7EF = {
 			isa = PBXGroup;
 			children = (
+				A23208D21996473200BF5E38 /* SHA256 doc.playground */,
 				A2230F79197E8840003C178C /* Classes */,
 				A2FD6A56197E8757006FA7EF /* Tests */,
 				A2FD6A42197E8757006FA7EF /* Supporting Files */,
