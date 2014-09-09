@@ -46,7 +46,7 @@ public struct SHA256 {
         var string = ""
         
         for char in input {
-            string+=char
+            string.append(char)
             if(countElements(string) == 2) {
                 let scanner = NSScanner(string: string)
                 var value: CUnsignedInt = 0
@@ -70,7 +70,7 @@ public struct SHA256 {
         for char in sha256description {
             switch char {
             case "0", "1", "2", "3", "4", "5", "6", "7","8","9", "a", "b", "c", "d", "e", "f":
-                result += char
+                result.append(char)
             default:
                 result += ""
             }
