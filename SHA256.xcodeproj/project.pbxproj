@@ -17,6 +17,7 @@
 		A2FD6A51197E8757006FA7EF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FD6A50197E8757006FA7EF /* XCTest.framework */; };
 		A2FD6A52197E8757006FA7EF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FD6A3B197E8757006FA7EF /* Cocoa.framework */; };
 		A2FD6A55197E8757006FA7EF /* SHA256Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FD6A38197E8757006FA7EF /* SHA256Mac.framework */; };
+		A2FDB89C19C07A2000BC4740 /* SHA256Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C2B92198E658900B48868 /* SHA256Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,7 @@
 		A2230F7E197E8914003C178C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A22C2B90198E656400B48868 /* SHA256iOs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHA256iOs.h; path = SHA256iOs/SHA256iOs.h; sourceTree = SOURCE_ROOT; };
 		A22C2B92198E658900B48868 /* SHA256Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA256Tests.swift; sourceTree = SOURCE_ROOT; };
-		A23208D21996473200BF5E38 /* SHA256 doc.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "SHA256 doc.playground"; sourceTree = "<group>"; };
+		A23208D21996473200BF5E38 /* Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Mac.playground; sourceTree = "<group>"; };
 		A2D39BE1198D841400E2D317 /* SHA256iOs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHA256iOs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D39BE4198D841400E2D317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "Supporting Files/iOs/Info.plist"; sourceTree = "<group>"; };
 		A2D88908198D889100D57AD2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
@@ -64,6 +65,9 @@
 		A2FD6A4F197E8757006FA7EF /* SHA256MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHA256MacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FD6A50197E8757006FA7EF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A2FD6A58197E8757006FA7EF /* SHA256Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SHA256Tests-Info.plist"; path = "Supporting Files/Mac/SHA256Tests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A2FDB88C19C0792100BC4740 /* iOs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = iOs.playground; sourceTree = "<group>"; };
+		A2FDB89119C079EE00BC4740 /* SHA256iOs Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SHA256iOs Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2FDB89419C079EE00BC4740 /* SHA256Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SHA256Tests-Info.plist"; path = "Supporting Files/iOs/SHA256Tests-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,13 @@
 				A2FD6A55197E8757006FA7EF /* SHA256Mac.framework in Frameworks */,
 				A2FD6A52197E8757006FA7EF /* Cocoa.framework in Frameworks */,
 				A2FD6A51197E8757006FA7EF /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2FDB88E19C079EE00BC4740 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +143,8 @@
 		A2FD6A2E197E8757006FA7EF = {
 			isa = PBXGroup;
 			children = (
-				A23208D21996473200BF5E38 /* SHA256 doc.playground */,
+				A23208D21996473200BF5E38 /* Mac.playground */,
+				A2FDB88C19C0792100BC4740 /* iOs.playground */,
 				A2230F79197E8840003C178C /* Classes */,
 				A2FD6A56197E8757006FA7EF /* Tests */,
 				A2FD6A42197E8757006FA7EF /* Supporting Files */,
@@ -147,6 +159,7 @@
 				A2FD6A38197E8757006FA7EF /* SHA256Mac.framework */,
 				A2FD6A4F197E8757006FA7EF /* SHA256MacTests.xctest */,
 				A2D39BE1198D841400E2D317 /* SHA256iOs.framework */,
+				A2FDB89119C079EE00BC4740 /* SHA256iOs Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,6 +192,7 @@
 		A2FD6A42197E8757006FA7EF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A2FDB89B19C079FB00BC4740 /* iOs Tests */,
 				A22C2B90198E656400B48868 /* SHA256iOs.h */,
 				A2230F75197E87E2003C178C /* Mac */,
 				A2D39BFC198D84D700E2D317 /* iOs */,
@@ -195,6 +209,14 @@
 			);
 			name = Tests;
 			path = SHA256Tests;
+			sourceTree = "<group>";
+		};
+		A2FDB89B19C079FB00BC4740 /* iOs Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A2FDB89419C079EE00BC4740 /* SHA256Tests-Info.plist */,
+			);
+			name = "iOs Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +276,9 @@
 			productReference = A2FD6A38197E8757006FA7EF /* SHA256Mac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A2FD6A4E197E8757006FA7EF /* SHA256MacTests */ = {
+		A2FD6A4E197E8757006FA7EF /* SHA256Mac Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2FD6A63197E8757006FA7EF /* Build configuration list for PBXNativeTarget "SHA256MacTests" */;
+			buildConfigurationList = A2FD6A63197E8757006FA7EF /* Build configuration list for PBXNativeTarget "SHA256Mac Tests" */;
 			buildPhases = (
 				A2FD6A4B197E8757006FA7EF /* Sources */,
 				A2FD6A4C197E8757006FA7EF /* Frameworks */,
@@ -269,9 +291,26 @@
 				A2230F81197E8924003C178C /* PBXTargetDependency */,
 				A2230F83197E8924003C178C /* PBXTargetDependency */,
 			);
-			name = SHA256MacTests;
+			name = "SHA256Mac Tests";
 			productName = SHA256Tests;
 			productReference = A2FD6A4F197E8757006FA7EF /* SHA256MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A2FDB89019C079EE00BC4740 /* SHA256iOs Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2FDB89719C079EE00BC4740 /* Build configuration list for PBXNativeTarget "SHA256iOs Tests" */;
+			buildPhases = (
+				A2FDB88D19C079EE00BC4740 /* Sources */,
+				A2FDB88E19C079EE00BC4740 /* Frameworks */,
+				A2FDB88F19C079EE00BC4740 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SHA256iOs Tests";
+			productName = "SHA256iOs Tests";
+			productReference = A2FDB89119C079EE00BC4740 /* SHA256iOs Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -289,6 +328,9 @@
 					A2FD6A4E197E8757006FA7EF = {
 						TestTargetID = A2FD6A37197E8757006FA7EF;
 					};
+					A2FDB89019C079EE00BC4740 = {
+						CreatedOnToolsVersion = 6.0;
+					};
 				};
 			};
 			buildConfigurationList = A2FD6A32197E8757006FA7EF /* Build configuration list for PBXProject "SHA256" */;
@@ -304,8 +346,9 @@
 			projectRoot = "";
 			targets = (
 				A2FD6A37197E8757006FA7EF /* SHA256Mac */,
-				A2FD6A4E197E8757006FA7EF /* SHA256MacTests */,
+				A2FD6A4E197E8757006FA7EF /* SHA256Mac Tests */,
 				A2D39BE0198D841400E2D317 /* SHA256iOs */,
+				A2FDB89019C079EE00BC4740 /* SHA256iOs Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -326,6 +369,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A2FD6A4D197E8757006FA7EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2FDB88F19C079EE00BC4740 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -356,6 +406,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A22C2B93198E658900B48868 /* SHA256Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2FDB88D19C079EE00BC4740 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2FDB89C19C07A2000BC4740 /* SHA256Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +609,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = CommonCrypto;
-				SWIFT_OPTIMIZATION_LEVEL = "-Ofast";
+				SWIFT_OPTIMIZATION_LEVEL = "-Ounchecked";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -719,6 +777,70 @@
 			};
 			name = Release;
 		};
+		A2FDB89819C079EE00BC4740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Supporting Files/iOs/SHA256Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2FDB89919C079EE00BC4740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Supporting Files/iOs/SHA256Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2FDB89A19C079EE00BC4740 /* Fast */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Supporting Files/iOs/SHA256Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Fast;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -752,7 +874,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2FD6A63197E8757006FA7EF /* Build configuration list for PBXNativeTarget "SHA256MacTests" */ = {
+		A2FD6A63197E8757006FA7EF /* Build configuration list for PBXNativeTarget "SHA256Mac Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2FD6A64197E8757006FA7EF /* Debug */,
@@ -761,6 +883,15 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A2FDB89719C079EE00BC4740 /* Build configuration list for PBXNativeTarget "SHA256iOs Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2FDB89819C079EE00BC4740 /* Debug */,
+				A2FDB89919C079EE00BC4740 /* Release */,
+				A2FDB89A19C079EE00BC4740 /* Fast */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

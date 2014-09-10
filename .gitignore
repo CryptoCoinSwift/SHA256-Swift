@@ -2,3 +2,9 @@
 *.xcuserstate
 .DS_Store
 xcuserdata
+
+SHA256.xcodeproj/xcuserdata/sjors.xcuserdatad/xcschemes/xcschememanagement.plist
+
+SHA256.xcodeproj/xcuserdata/sjors.xcuserdatad/xcschemes/SHA256 Mac.xcscheme
+
+SHA256.xcodeproj/xcuserdata/sjors.xcuserdatad/xcschemes/SHA256 iOs.xcscheme

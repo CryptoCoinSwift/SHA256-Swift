@@ -7,7 +7,11 @@
 //
 
 import XCTest
+#if os(OSX)
 import SHA256Mac
+#else
+import SHA256iOs
+#endif
 
 class SHA256Tests: XCTestCase {
 
