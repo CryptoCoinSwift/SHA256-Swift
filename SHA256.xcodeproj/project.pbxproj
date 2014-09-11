@@ -62,7 +62,7 @@
 		A2FD6A3F197E8757006FA7EF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A2FD6A40197E8757006FA7EF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		A2FD6A43197E8757006FA7EF /* SHA256-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "SHA256-Info.plist"; path = "Supporting Files/Mac/SHA256-Info.plist"; sourceTree = "<group>"; };
-		A2FD6A4F197E8757006FA7EF /* SHA256MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHA256MacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2FD6A4F197E8757006FA7EF /* SHA256Mac Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SHA256Mac Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FD6A50197E8757006FA7EF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A2FD6A58197E8757006FA7EF /* SHA256Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SHA256Tests-Info.plist"; path = "Supporting Files/Mac/SHA256Tests-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A2FDB88C19C0792100BC4740 /* iOs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = iOs.playground; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				A2FD6A38197E8757006FA7EF /* SHA256Mac.framework */,
-				A2FD6A4F197E8757006FA7EF /* SHA256MacTests.xctest */,
+				A2FD6A4F197E8757006FA7EF /* SHA256Mac Tests.xctest */,
 				A2D39BE1198D841400E2D317 /* SHA256iOs.framework */,
 				A2FDB89119C079EE00BC4740 /* SHA256iOs Tests.xctest */,
 			);
@@ -293,7 +293,7 @@
 			);
 			name = "SHA256Mac Tests";
 			productName = SHA256Tests;
-			productReference = A2FD6A4F197E8757006FA7EF /* SHA256MacTests.xctest */;
+			productReference = A2FD6A4F197E8757006FA7EF /* SHA256Mac Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A2FDB89019C079EE00BC4740 /* SHA256iOs Tests */ = {
@@ -892,6 +892,7 @@
 				A2FDB89A19C079EE00BC4740 /* Fast */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
