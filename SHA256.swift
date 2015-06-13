@@ -47,7 +47,7 @@ public struct SHA256 {
         
         for char in input {
             string.append(char)
-            if(countElements(string) == 2) {
+            if(count(string) == 2) {
                 let scanner = NSScanner(string: string)
                 var value: CUnsignedInt = 0
                 scanner.scanHexInt(&value)
