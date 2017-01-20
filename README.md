@@ -1,7 +1,9 @@
 SHA256-Swift
 ============
 
-Swift framework wrapping CommonCrypto's SHA256 methods. 
+Swift framework wrapping CommonCrypto's SHA256 methods.
+
+*This is experimental. Do not use this in a production system.*
 
 Installation instructions
 -------------------------
